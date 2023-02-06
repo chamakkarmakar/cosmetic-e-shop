@@ -24,11 +24,11 @@ const NavBar = () => {
         <Tab eventKey="login" title="Login"></Tab>
       </Tabs>
 
-      <button type="button" class="btn position-relative">
+      <button type="button" className="btn position-relative">
         <ShoppingCartIcon style={{ width: "30px" }} className='text-dark ms-5 mt-0'></ShoppingCartIcon>
-        <span class="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-danger">
+        <span className="position-absolute top-0 start-80 translate-middle badge rounded-pill bg-danger">
           9+
-          <span class="visually-hidden">unread messages</span>
+          <span className="visually-hidden">unread messages</span>
         </span>
       </button>
     </div>
