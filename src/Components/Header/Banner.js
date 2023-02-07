@@ -34,7 +34,8 @@ const Banner = () => {
         setIndex(selectedIndex);
     };
     return (
-        <Carousel activeIndex={index} onSelect={handleSelect}>
+        <div>
+            <Carousel activeIndex={index} onSelect={handleSelect}>
             {
                 banners.map(banner=>
                     <Carousel.Item key={banner.id}>
@@ -50,10 +51,9 @@ const Banner = () => {
                 </Carousel.Caption>
             </Carousel.Item>
                     )
-            }
-            
-            
+            }    
         </Carousel>
+        </div>
     )
 }
 

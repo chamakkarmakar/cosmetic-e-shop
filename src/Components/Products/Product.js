@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button, Card } from 'react-bootstrap'
 
-const Product = ({ product }) => {
-  console.log(product);
+const Product = ({ product,handleCart }) => {
+
   return (
     <Card className='shadow-lg col-3' style={{ width: '18rem' }}>
       <Card.Img variant="top"
@@ -15,7 +15,7 @@ const Product = ({ product }) => {
         </Card.Text>
       </Card.Body>
       <Card.Footer className='d-flex justify-content-between border-0'>
-        <Button variant="primary">Add to cart</Button>
+        <Button variant="primary" onClick={()=>handleCart(product)}>Add to cart</Button>
         <Button variant="info">Buy Now</Button>
       </Card.Footer>
     </Card>
