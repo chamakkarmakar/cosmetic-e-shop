@@ -11,12 +11,13 @@ const Product = ({ product,handleCart }) => {
       <Card.Body>
         <Card.Title>{product.name}</Card.Title>
         <Card.Text>
-          {product.description.slice(0, 150)} <span className='text-primary'>...see more</span>
+          <p>Price : <span className='fw-bold'>${product.price}</span></p>
+         <p>{product.description.slice(0, 100)} <span className='text-primary'>...see more</span></p>
         </Card.Text>
       </Card.Body>
       <Card.Footer className='d-flex justify-content-between border-0'>
         <Button variant="primary" onClick={()=>handleCart(product)}>Add to cart</Button>
-        <Button variant="info">Buy Now</Button>
+        {/* <Button variant="info">Buy Now</Button> */}
       </Card.Footer>
     </Card>
   )
